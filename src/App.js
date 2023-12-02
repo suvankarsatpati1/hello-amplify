@@ -6,10 +6,8 @@ import config from './amplifyconfiguration.json';
 Amplify.configure(config);
 
 function App({ signOut, user }) {
-  console.log(user)
   return (
     <>
-    <h1>Welcome!</h1>
       <h1>Hello {user.username}</h1>
       <button onClick={signOut}>Sign out</button>
     </>
